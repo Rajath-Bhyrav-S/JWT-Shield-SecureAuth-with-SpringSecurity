@@ -31,11 +31,11 @@ public class UserService
 	public String verify(Users user) 
 	{
 		org.springframework.security.core.Authentication authentication = authmanager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
-		if(authentication.isAuthenticated())
-		{
-			return jwtService.generateTocken();
-		}
-		return "fail";
+		if (authentication.isAuthenticated()) {
+            return jwtService.generateTocken(user.getUsername());
+        } else {
+            return "fail";
 	}
 
+}
 }
