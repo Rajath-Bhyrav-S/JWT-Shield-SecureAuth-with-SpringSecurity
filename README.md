@@ -10,9 +10,9 @@ Securing web applications is essential, especially when they handle sensitive us
 ## Different Methods of Securing a Web Application
 * **Username and Password Authentication**: The most common method.
 
-* **OAuth2**: Allows third-party services like Google or GitHub to authenticate users.
-
 * **JWT (JSON Web Tokens)**: Offers a compact and self-contained way of securely transmitting information between parties.
+
+* **Hashing**: Password hashing is a technique that transforms a password into a fixed-length sequence of characters, which is then stored in a database. This process is one-way and cannot be reversed, enhancing security by ensuring that the original password is not directly accessible.
 
 Each method has its own advantages and is suitable for different scenarios based on the specific needs of your application.
 ## Technologies Used
